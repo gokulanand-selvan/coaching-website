@@ -1,6 +1,6 @@
 import Header from "../components/Header";
-import laptopImage from "../assets/laptop.jpg";
 import { InfiniteLooper } from "../components/infiniteCarousel/InfiniteCarousel";
+import laptopImage from "../assets/laptop.webp";
 import HTMLimg from "../assets/HTML.png";
 import CSSimg from "../assets/css.png";
 import jsImg from "../assets/js.png";
