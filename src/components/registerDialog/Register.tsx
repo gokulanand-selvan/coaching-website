@@ -9,6 +9,7 @@ type FormData = {
   mobileNumber: string;
   education: string;
   yearPassedOut: string;
+  location: string;
 };
 
 const Register = ({ children }: { children: ReactNode }) => {
@@ -18,6 +19,7 @@ const Register = ({ children }: { children: ReactNode }) => {
     mobileNumber: "",
     education: "",
     yearPassedOut: "",
+    location: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -36,6 +38,7 @@ const Register = ({ children }: { children: ReactNode }) => {
     { type: "tel", name: "mobileNumber", placeholder: "Mobile Number" },
     { type: "text", name: "education", placeholder: "Education" },
     { type: "text", name: "yearPassedOut", placeholder: "Year of Passed Out" },
+    { type: "text", name: "Location", placeholder: "Location" },
   ];
 
   return (
@@ -52,7 +55,7 @@ const Register = ({ children }: { children: ReactNode }) => {
           </Dialog.Description>
 
           <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-2 gap-4 p-2 mb-4">
+            <div className="grid grid-cols-2 gap-8 p-2 mb-4">
               <input
                 type={inputs[0].type}
                 name={inputs[0].name}
@@ -85,6 +88,24 @@ const Register = ({ children }: { children: ReactNode }) => {
                 name={inputs[3].name}
                 placeholder={inputs[3].placeholder}
                 value={formData[inputs[3].name as keyof FormData]}
+                onChange={handleChange}
+                required
+                className={styles.Input}
+              />
+              <input
+                type={inputs[4].type}
+                name={inputs[4].name}
+                placeholder={inputs[4].placeholder}
+                value={formData[inputs[4].name as keyof FormData]}
+                onChange={handleChange}
+                required
+                className={styles.Input}
+              />
+              <input
+                type={inputs[5].type}
+                name={inputs[5].name}
+                placeholder={inputs[5].placeholder}
+                value={formData[inputs[5].name as keyof FormData]}
                 onChange={handleChange}
                 required
                 className={styles.Input}

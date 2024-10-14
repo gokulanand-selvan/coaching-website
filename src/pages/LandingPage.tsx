@@ -90,7 +90,7 @@ export default function LandingPage() {
               <IoMdMail fontSize={36} />
               &nbsp; For more details please Register &nbsp;{" "}
               <Register>
-                <span className="text-blue-800 cursor-pointer">here</span>
+                <span className="text-sky-400 cursor-pointer">here</span>
               </Register>
             </p>
           </div>
