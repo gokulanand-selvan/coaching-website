@@ -29,7 +29,7 @@ export default function LandingPage() {
       <Header />
       {/* intro Section */}
       <section
-        className="w-screen h-[calc(100vh-10.5rem)] text-white flex flex-col pt-28 items-center gap-12 bg-black"
+        className="w-full h-[calc(100vh-10.5rem)] text-white flex flex-col pt-28 items-center gap-12 bg-black"
         style={{
           backgroundImage: `url(${laptopImage})`,
           backgroundSize: "cover",
